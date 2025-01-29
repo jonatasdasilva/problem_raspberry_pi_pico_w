@@ -10,9 +10,9 @@ Após compilação e inserção de um novo código no dispositivo, o mesmo apres
 
 #### Como ocorreu
 
-Após compilação e teste do código no simulador Wokwi, o programa desenvolvido foi enviado para a placa, mas após o envio o programa não executou e a porta USB apresentou falha (Erro 43 no Windows). Após a falha na USB, o programa anteriormente existente na placa passou a ser executado e o novo não existia na mesma, pois a sua execução não poderá ser visualizada.
+Após compilação e teste do código no simulador Wokwi, o programa desenvolvido foi enviado para a placa (utilizando o botão RUN da Extensão do Raspberry Pi Pico no `vscode`), mas após o envio o programa não executou e a porta USB apresentou falha (Erro 43 no Windows). Após a falha na USB, o programa anteriormente existente na placa passou a ser executado e o novo não existia na mesma, pois a sua execução não poderá ser visualizada.
 
-A placa continua entrando em modo BOOTSEL, mas a unidade RPI-PR2 não pode ser visualizada no computador.
+A placa continua entrando em modo `BOOTSEL`, mas a unidade `RPI-PR2` não pode ser visualizada no computador.
 
 ### Verificações
 
@@ -25,7 +25,7 @@ Após a falha, algumas verificações foram feitas, sendo elas:
 
 #### Primeira verificação
 
-Após a falha e verificando que a placa ainda permitia entrar em modo `BOOTSEL, foi verificado como o mesmo aparecia no **Gerenciador de Dispositivos**, sendo detectado o visualizado na imagem abaixo.
+Após a falha e verificando que a placa ainda permitia entrar em modo `BOOTSEL`, foi verificado como o mesmo aparecia no **Gerenciador de Dispositivos**, sendo detectado o visualizado na imagem abaixo.
 
 ![Gerenciador de Dispositivos](images/image1.png)
 
@@ -84,7 +84,7 @@ Nos fóruns e os relatos de problemas similares, bastava realizar a operação d
 Podendo ser verificado neste link: https://forums.raspberrypi.com/viewtopic.php?p=2266706&hilit=Raspberry+Pi+Pico+W+Unknown+USB+Device#p2266706
 
 
-## Última solução encontrada
+## Última solução encontrada (Não testada)
 
 Como uso do Chatgpt para encontrar uma solução, uma solução possível foi apresentada, sendo ela:
 
@@ -140,4 +140,3 @@ Se a unidade `RPI-RP2` aparecer, copie o arquivo `.uf2` para ela.
 O pino `RUN` é responsável por reiniciar o microcontrolador RP2040. Criando um curto entre `RUN` e `GND`, você força o chip a resetar.
 Manter `BOOTSEL` pressionado durante esse reset força o chip a entrar no modo USB de recuperação (`RPI-RP2`), mesmo que o firmware anterior esteja corrompido.
 O procedimento é seguro e apenas reinicializa o RP2040 sem riscos de dano.
-    
