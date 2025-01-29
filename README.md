@@ -86,7 +86,7 @@ Podendo ser verificado neste link: https://forums.raspberrypi.com/viewtopic.php?
 
 ## Última solução encontrada (Não testada)
 
-Como uso do Chatgpt para encontrar uma solução, uma solução possível foi apresentada, sendo ela:
+Como uso do Chatgpt, para encontrar uma solução. Uma solução possível foi apresentada, sendo ela:
 
 
 ### Indicativos de persistência do problema
