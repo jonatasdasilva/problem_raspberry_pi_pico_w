@@ -14,6 +14,10 @@ Após compilação e teste do código no simulador Wokwi, o programa desenvolvid
 
 A placa continua entrando em modo `BOOTSEL`, mas a unidade `RPI-PR2` não pode ser visualizada no computador.
 
+Logo após essa ocorrência, obtenho sempre um indicativo de que o dispositivo USB não pode ser detectado, como visto na imagem abaixo.
+
+![Erro no dispositivo USB](images/image4.jpg)
+
 ### Verificações
 
 Após a falha, algumas verificações foram feitas, sendo elas:
@@ -84,7 +88,7 @@ Nos fóruns e os relatos de problemas similares, bastava realizar a operação d
 Podendo ser verificado neste link: https://forums.raspberrypi.com/viewtopic.php?p=2266706&hilit=Raspberry+Pi+Pico+W+Unknown+USB+Device#p2266706
 
 
-## Última solução encontrada (Não testada)
+## Última solução encontrada
 
 Como uso do Chatgpt, para encontrar uma solução. Uma solução possível foi apresentada, sendo ela:
 
@@ -134,6 +138,10 @@ A informação sobre forçar o modo `BOOTSEL` com hardware não está documentad
         ```
 
 Se a unidade `RPI-RP2` aparecer, copie o arquivo `.uf2` para ela.
+
+##### Executado após solicitação
+
+Após uma consulta com os professores, este foi um dos procedimentos indicados para serem executados, mas não obtive sucesso.
 
 #### Explicação do Processo
 
